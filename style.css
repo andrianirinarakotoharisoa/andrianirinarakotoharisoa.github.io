@@ -246,6 +246,80 @@ img { max-width: 100%; display: block; }
   margin-bottom: 0;
 }
 
+.currently-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+.currently-list li {
+  position: relative;
+  padding-left: 1.1rem;
+  color: var(--ink-muted);
+  font-size: 0.95rem;
+}
+.currently-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.6em;
+  width: 5px;
+  height: 5px;
+  background: var(--rule);
+  border-radius: 50%;
+}
+
+/* ---------- Inline links within body copy ---------- */
+.section p a,
+.hero-inner .bio a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-color: var(--rule);
+  text-underline-offset: 3px;
+}
+.section p a:hover,
+.section p a:focus-visible,
+.hero-inner .bio a:hover,
+.hero-inner .bio a:focus-visible {
+  text-decoration-color: currentColor;
+}
+
+/* ---------- Music page: gigs & photos ---------- */
+.gig-list {
+  display: flex;
+  flex-direction: column;
+}
+.gig-list li {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.5rem;
+  border-top: 1px solid var(--rule);
+  padding: 1rem 0;
+}
+.gig-date {
+  color: var(--ink-muted);
+  font-size: 0.9rem;
+  min-width: 110px;
+}
+.gig-details { flex: 1; }
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+}
+.photo-grid figure { margin: 0; }
+.photo-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.photo-grid figcaption {
+  font-size: 0.85rem;
+  color: var(--ink-muted);
+  margin-top: 0.5rem;
+}
+
 /* ---------- Timeline (experience) ---------- */
 .timeline {
   display: flex;
