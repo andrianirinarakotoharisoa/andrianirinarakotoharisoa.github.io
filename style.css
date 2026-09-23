@@ -160,6 +160,26 @@ img { max-width: 100%; display: block; }
   background: var(--ink);
   color: var(--paper);
 }
+@media (max-width: 720px) {
+  .header-inner {
+    flex-wrap: wrap;
+    padding: 0.7rem 1rem 0;
+    gap: 0.5rem 1rem;
+  }
+  .mark { margin-right: auto; }
+  .resume-btn { padding: 0.3rem 0.75rem; font-size: 0.85rem; }
+  .site-header nav {
+    order: 3;
+    width: 100%;
+    margin-right: 0;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+    padding-bottom: 0.5rem;
+  }
+  .site-header nav::-webkit-scrollbar { display: none; }
+  .site-header nav a { white-space: nowrap; }
+}
 
 /* ---------- Hero ---------- */
 .hero {
