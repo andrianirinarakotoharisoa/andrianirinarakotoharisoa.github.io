@@ -43,7 +43,7 @@
     <div class="hero-inner">
       <h1>Andrianirina Rakotoharisoa</h1>
       <p class="role">Machine Learning Researcher &amp; Engineer — Computer Vision &amp; Generative AI</p>
-      <p class="bio">PhD graduate from Imperial College London (viva passed July 2026), working across computer vision and generative AI — from anomaly detection in satellite imagery to a globally consistent CO<sub>2</sub> monitoring dataset with a 16× resolution improvement, published in <em>Remote Sensing</em> and presented at NeurIPS and ICLR. Currently most interested in climate change monitoring, policy-relevant applications of AI, and interdisciplinary work at the edge of research and engineering.</p>
+      <p class="bio">I'm a machine learning researcher with a PhD from Imperial College London, specialised in computer vision and generative AI. I've built diffusion-based anomaly detection for satellite imagery and released a globally consistent CO<sub>2</sub> dataset at 16× the source resolution, with work published in Remote Sensing and presented at NeurIPS and ICLR workshops. I care about climate change and AI security, and I'm looking for industry roles where ML makes a real difference to those problems.</p>
       <div class="link-row hero-links">
         <a href="mailto:andrianirina.rakotoharisoa@gmail.com">Email</a>
         <a href="https://www.linkedin.com/in/andrianirina-r-228589144/" target="_blank" rel="noopener">LinkedIn</a>
@@ -54,20 +54,19 @@
 
   <section id="work" class="section">
     <h2>Selected work</h2>
-    <p class="section-note">A few research projects that show the range from modelling to deployed pipelines. More write-ups and links are on the way.</p>
     <div class="work-list">
       <article class="work-item">
-        <h3>ADECEES — ensemble anomaly detection for satellite imagery</h3>
+        <h3>ADECEES / Diffusion-based anomaly detection for satellite imagery</h3>
         <p>An ensemble segmentation framework for real-time detection of CO<sub>2</sub> point-source anomalies in Sentinel-3 multispectral imagery, built end to end from data ingestion through localisation and evaluation.</p>
-        <p class="work-meta">Built at ESA Φ-lab; accepted at NeurIPS 2025.</p>
+        <p class="work-meta">Built at ESA Φ-lab; accepted at NeurIPS 2025. <a class="paper-link" href="https://www.climatechange.ai/papers/neurips2025/70" target="_blank" rel="noopener"><svg class="paper-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M4 1.5h5.5L13 5v9.5H4z"/><path d="M9.5 1.5V5H13M6 8h5M6 10.5h5M6 13h3"/></svg>Paper</a></p>
       </article>
       <article class="work-item">
-        <h3>Global CO<sub>2</sub> super-resolution dataset</h3>
-        <p>A diffusion-based super-resolution network that turns noisy geospatial sensor data into a daily, globally consistent XCO<sub>2</sub> dataset at 16× the source resolution.</p>
-        <p class="work-meta">Developed during the PhD at Imperial College London; published in <em>Remote Sensing</em>, 2025.</p>
+        <h3>Global CO<sub>2</sub> super-resolution dataset <a class="paper-link title-link" href="https://gd-xco2.dsi.ic.ac.uk/datasets" target="_blank" rel="noopener"><svg class="paper-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><ellipse cx="8" cy="3.5" rx="5" ry="2"/><path d="M3 3.5v9c0 1.1 2.2 2 5 2s5-.9 5-2v-9M3 8c0 1.1 2.2 2 5 2s5-.9 5-2"/></svg>Dataset</a></h3>
+        <p>A global, daily, gap-free dataset of column-averaged CO<sub>2</sub> (XCO<sub>2</sub>), produced by a CNN super-resolution model that raises the resolution of OCO-2 satellite data 16×, to about 3&nbsp;km.</p>
+        <p class="work-meta">Developed and released during the PhD at Imperial College London; published in <em>Remote Sensing</em>, 2025.</p>
       </article>
       <article class="work-item">
-        <h3>3D gaze &amp; multi-person tracking</h3>
+        <h3>3D gaze &amp; multi-person tracking <a class="paper-link title-link" href="https://github.com/dsi-icl/do-gaze" target="_blank" rel="noopener"><svg class="paper-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M5.5 4.5 2 8l3.5 3.5M10.5 4.5 14 8l-3.5 3.5M9 3 7 13"/></svg>Code & Thesis</a></h3>
         <p>A 3D gaze-direction predictor combining face orientation and body posture estimation, paired with a multi-person tracking model robust to viewpoint changes in semi-open immersive environments.</p>
         <p class="work-meta">MSc research, Imperial College London, 2019.</p>
       </article>
@@ -84,7 +83,7 @@
           <p class="tl-org">ESA Φ-lab, Frascati, Italy</p>
           <ul>
             <li>Designed ADECEES, a state-of-the-art ensemble segmentation framework for real-time anomaly detection in Sentinel-3 multispectral satellite imagery, accepted at NeurIPS 2025.</li>
-            <li>Architected the end-to-end inference pipeline — ingestion, multi-model ensemble inference, anomaly localisation, evaluation — and delivered production-quality code on institutional HPC (SLURM).</li>
+            <li>Architected the end-to-end inference pipeline (ingestion, multi-model ensemble inference, anomaly localisation, evaluation) and delivered production-quality code on institutional HPC (SLURM).</li>
           </ul>
         </div>
       </li>
@@ -94,7 +93,7 @@
           <h3>PhD Researcher, Generative AI &amp; Deep Learning</h3>
           <p class="tl-org">Imperial College London, Data Science Institute</p>
           <ul>
-            <li>Adapted diffusion and super-resolution architectures to high-dimensional geospatial sensor data, releasing a globally consistent daily XCO<sub>2</sub> dataset with a 16× spatial resolution improvement.</li>
+            <li>Adapted anomaly detection and super-resolution architectures to high-dimensional geospatial sensor data, releasing a globally consistent daily XCO<sub>2</sub> dataset with a 16× spatial resolution improvement.</li>
             <li>Ran ML experiments and inference workflows on institutional HPC (SLURM/PBS), optimising for reproducibility and throughput; published at NeurIPS and ICLR workshops and lectured on ML at Imperial's Data Science summer schools.</li>
           </ul>
         </div>
@@ -105,12 +104,13 @@
           <h3>System Engineer, Human-Computer Interaction &amp; 3D Sensing</h3>
           <p class="tl-org">Data Science Institute, Imperial College London</p>
           <ul>
+            <li>Administered cloud infrastructure and security for the institute, defining access and group policies for ~50 researchers from multiple institutions.</li>
             <li>Led applied research on multi-person tracking and spatial interaction modelling using 3D sensor arrays (camera arrays, depth sensors).</li>
-            <li>Designed and maintained real-time multi-camera tracking pipelines for the Global Data Observatory, and managed cloud infrastructure and security for the facility.</li>
+            <li>Designed and maintained real-time multi-camera tracking pipelines for the Global Data Observatory.</li>
           </ul>
         </div>
       </li>
-      <li>
+      <!-- <li>
         <div class="tl-date">May 2019 – Oct 2019</div>
         <div class="tl-content">
           <h3>MSc Research, 3D Gaze Estimation &amp; Multi-Person Tracking</h3>
@@ -120,7 +120,7 @@
             <li>Implemented a multi-person tracking model robust to viewpoint variation.</li>
           </ul>
         </div>
-      </li>
+      </li> -->
       <li>
         <div class="tl-date">May 2018 – Sep 2018</div>
         <div class="tl-content">
@@ -149,11 +149,11 @@
       </li>
       <li>
         <p class="pub-title">ADECEES: Anomaly Detection of CO<sub>2</sub> Emissions via Ensemble Segmentation</p>
-        <p class="pub-venue">NeurIPS 2025: Tackling Climate Change with ML Workshop, December 2025 · <a href="https://www.climatechange.ai/papers/neurips2025/70" target="_blank" rel="noopener">climatechange.ai/papers/neurips2025/70</a></p>
+        <p class="pub-venue">NeurIPS 2025: Tackling Climate Change with ML Workshop, December 2025 · <a class="paper-link" href="https://www.climatechange.ai/papers/neurips2025/70" target="_blank" rel="noopener"><svg class="paper-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M4 1.5h5.5L13 5v9.5H4z"/><path d="M9.5 1.5V5H13M6 8h5M6 10.5h5M6 13h3"/></svg>Paper</a></p>
       </li>
       <li>
         <p class="pub-title">Global High Resolution CO<sub>2</sub> Monitoring using Super Resolution</p>
-        <p class="pub-venue">ICLR 2024: Tackling Climate Change with ML Workshop, May 2024 · <a href="https://www.climatechange.ai/papers/iclr2024/48" target="_blank" rel="noopener">climatechange.ai/papers/iclr2024/48</a></p>
+        <p class="pub-venue">ICLR 2024: Tackling Climate Change with ML Workshop, May 2024 · <a class="paper-link" href="https://www.climatechange.ai/papers/iclr2024/48" target="_blank" rel="noopener"><svg class="paper-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M4 1.5h5.5L13 5v9.5H4z"/><path d="M9.5 1.5V5H13M6 8h5M6 10.5h5M6 13h3"/></svg>Paper</a></p>
       </li>
       <li>
         <p class="pub-title">High Resolution Greenhouse Gas Monitoring using Super Resolution (Poster)</p>
@@ -168,7 +168,7 @@
       <article>
         <h3>PhD, Machine Learning &amp; Data Science</h3>
         <p class="edu-org">Imperial College London — 2022–2026</p>
-        <p>Thesis: “Developing AI for Good: Increasing the Potential of Remote Sensing Data for Climate Change Mitigation,” supervised by Dr Rossella Arcucci and Dr Simone Cenci. Taught on the Machine Learning, Data Science, and Big Data Assimilation courses.</p>
+        <p>Thesis: “Developing AI for Good: Increasing the Potential of Remote Sensing Data for Climate Change Monitoring,” supervised by Dr Rossella Arcucci and Dr Simone Cenci. Taught on the Machine Learning, Data Science, and Big Data Assimilation courses.</p>
       </article>
       <article>
         <h3>Diplôme d'Ingénieur, First Class</h3>
@@ -196,7 +196,7 @@
     <div class="work-list">
       <article class="work-item">
         <h3>Music</h3>
-        <p>I play violin and drums — chamber pieces on the violin, groove-focused kit work on the drums. <a href="music.html">Gig dates and photos live on a dedicated page.</a></p>
+        <p>I play violin and drums: equally attracted to the groove (even chaos) and the perfectionism of written music. <a href="music.html">Gig dates and photos live on a dedicated page.</a></p>
       </article>
       <article class="work-item">
         <h3>Sport</h3>
